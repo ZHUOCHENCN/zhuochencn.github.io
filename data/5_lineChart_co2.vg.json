@@ -1,0 +1,80 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 700,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/ZHUOCHENCN/FIT3179_A2/main/data/5_co2.csv"
+    },
+    "params": [
+      {
+        "name": "Year_Above",
+        "value": 1970,
+        "bind": {
+          "input": "range",
+          "min": 1970,
+          "max": 2018,
+          "step": 5,
+          "name": "Year: "
+        }
+      },
+      {
+        "name": "Continent_selection",
+        "value":"World",
+        "bind": {
+          "input": "select",
+          "options": [
+            "World",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "labels": [
+            "World",
+            "North America",
+            "South America",
+            "Europe",
+            "Africa",
+            "Asia",
+            "Oceania"
+          ],
+          "name": "Continent: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "datum.Country == Continent_selection"
+      },
+      {"filter": "year(datum.Year) > Year_Above"}
+    ],
+    "layer":[{"mark": {"type": "line",  "point": true},
+    "encoding": {
+      "color":"darkred",
+      "y": {
+        "field": "AnnualCO2Emissions",
+        "type": "quantitative",
+        "title": "Annual Co2 emissions (Million)",
+        "aggregate": "sum",
+        "axis": {"domainColor":""}
+      },
+      "x": {
+        "field": "Year", 
+        "type": "temporal",
+        "axis": {"grid": false, "domainColor":"", "ticks": false}
+        },
+        
+        "tooltip": [
+        {"field": "AnnualCO2Emissions", "aggregate": "sum", "format": ".2f", "type": "quantitative", "title": "Total Emission"}, 
+        {"field": "Year", "type": "temporal", "title": "Year", "timeUnit":"year"}
+      ]
+    }}],
+     "config": {
+        "background":"",
+    "view": {
+       "stroke": "transparent"
+    }
+  }
+  }

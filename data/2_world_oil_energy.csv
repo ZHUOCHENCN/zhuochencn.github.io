@@ -1,0 +1,441 @@
+Year,Energy Type,Value
+1965,Coal Consumption - TWh,16140.1912
+1965,Gas Consumption - TWh,6303.803974
+1965,Geo Biomass Other - TWh,17.9852321
+1965,Hydro Generation - TWh,923.1979239
+1965,Nuclear Generation - TWh,25.53972424
+1965,Oil Consumption - TWh,18108.64331
+1965,Solar Generation - TWh,0
+1965,Wind Generation -TWh,0
+1966,Coal Consumption - TWh,16324.10691
+1966,Gas Consumption - TWh,6868.80002
+1966,Geo Biomass Other - TWh,19.8060069
+1966,Hydro Generation - TWh,983.817037
+1966,Nuclear Generation - TWh,34.43329033
+1966,Oil Consumption - TWh,19496.47113
+1966,Solar Generation - TWh,0
+1966,Wind Generation -TWh,0
+1967,Coal Consumption - TWh,16060.82258
+1967,Gas Consumption - TWh,7374.045271
+1967,Geo Biomass Other - TWh,19.98657074
+1967,Hydro Generation - TWh,1005.742652
+1967,Nuclear Generation - TWh,41.006014
+1967,Oil Consumption - TWh,20890.58046
+1967,Solar Generation - TWh,0
+1967,Wind Generation -TWh,0
+1968,Coal Consumption - TWh,16301.15972
+1968,Gas Consumption - TWh,8044.33793
+1968,Geo Biomass Other - TWh,22.1200451
+1968,Hydro Generation - TWh,1059.289008
+1968,Nuclear Generation - TWh,52.11316407
+1968,Oil Consumption - TWh,22675.46603
+1968,Solar Generation - TWh,0
+1968,Wind Generation -TWh,0
+1969,Coal Consumption - TWh,16798.74928
+1969,Gas Consumption - TWh,8833.425133
+1969,Geo Biomass Other - TWh,23.25796438
+1969,Hydro Generation - TWh,1121.743221
+1969,Nuclear Generation - TWh,61.78341156
+1969,Oil Consumption - TWh,24576.88446
+1969,Solar Generation - TWh,0
+1969,Wind Generation -TWh,0
+1970,Coal Consumption - TWh,17058.62177
+1970,Gas Consumption - TWh,9614.799431
+1970,Geo Biomass Other - TWh,25.69319599
+1970,Hydro Generation - TWh,1174.647576
+1970,Nuclear Generation - TWh,78.87465713
+1970,Oil Consumption - TWh,26708.06328
+1970,Solar Generation - TWh,0
+1970,Wind Generation -TWh,0
+1971,Coal Consumption - TWh,16965.97283
+1971,Gas Consumption - TWh,10292.20089
+1971,Geo Biomass Other - TWh,27.87916846
+1971,Hydro Generation - TWh,1227.065005
+1971,Nuclear Generation - TWh,109.7041774
+1971,Oil Consumption - TWh,28204.84362
+1971,Solar Generation - TWh,0
+1971,Wind Generation -TWh,0
+1972,Coal Consumption - TWh,17154.34626
+1972,Gas Consumption - TWh,10861.36779
+1972,Geo Biomass Other - TWh,29.87710082
+1972,Hydro Generation - TWh,1284.630368
+1972,Nuclear Generation - TWh,152.1751488
+1972,Oil Consumption - TWh,30377.96616
+1972,Solar Generation - TWh,0
+1972,Wind Generation -TWh,0
+1973,Coal Consumption - TWh,17667.86368
+1973,Gas Consumption - TWh,11376.72899
+1973,Geo Biomass Other - TWh,32.08492382
+1973,Hydro Generation - TWh,1303.009488
+1973,Nuclear Generation - TWh,203.9015793
+1973,Oil Consumption - TWh,32746.13961
+1973,Solar Generation - TWh,0
+1973,Wind Generation -TWh,0
+1974,Coal Consumption - TWh,17682.06536
+1974,Gas Consumption - TWh,11656.25695
+1974,Geo Biomass Other - TWh,33.95881358
+1974,Hydro Generation - TWh,1431.264984
+1974,Nuclear Generation - TWh,266.6000934
+1974,Oil Consumption - TWh,32272.44257
+1974,Solar Generation - TWh,0
+1974,Wind Generation -TWh,0
+1975,Coal Consumption - TWh,18024.55219
+1975,Gas Consumption - TWh,11661.08388
+1975,Geo Biomass Other - TWh,34.48367863
+1975,Hydro Generation - TWh,1448.889652
+1975,Nuclear Generation - TWh,369.8481907
+1975,Oil Consumption - TWh,31948.4332
+1975,Solar Generation - TWh,0
+1975,Wind Generation -TWh,0
+1976,Coal Consumption - TWh,18688.49996
+1976,Gas Consumption - TWh,12355.07225
+1976,Geo Biomass Other - TWh,38.46095587
+1976,Hydro Generation - TWh,1443.134706
+1976,Nuclear Generation - TWh,432.671421
+1976,Oil Consumption - TWh,34029.70108
+1976,Solar Generation - TWh,0
+1976,Wind Generation -TWh,0
+1977,Coal Consumption - TWh,19241.30906
+1977,Gas Consumption - TWh,12760.6383
+1977,Geo Biomass Other - TWh,40.56255723
+1977,Hydro Generation - TWh,1491.67161
+1977,Nuclear Generation - TWh,538.5478136
+1977,Oil Consumption - TWh,35214.62489
+1977,Solar Generation - TWh,0
+1977,Wind Generation -TWh,0
+1978,Coal Consumption - TWh,19457.91264
+1978,Gas Consumption - TWh,13295.42857
+1978,Geo Biomass Other - TWh,42.96747784
+1978,Hydro Generation - TWh,1614.387725
+1978,Nuclear Generation - TWh,625.794396
+1978,Oil Consumption - TWh,36425.79461
+1978,Solar Generation - TWh,0
+1978,Wind Generation -TWh,0.003
+1979,Coal Consumption - TWh,20363.5474
+1979,Gas Consumption - TWh,14119.88403
+1979,Geo Biomass Other - TWh,46.16932882
+1979,Hydro Generation - TWh,1695.189194
+1979,Nuclear Generation - TWh,650.8598947
+1979,Oil Consumption - TWh,37024.09334
+1979,Solar Generation - TWh,0
+1979,Wind Generation -TWh,0.006
+1980,Coal Consumption - TWh,20857.61851
+1980,Gas Consumption - TWh,14237.99852
+1980,Geo Biomass Other - TWh,49.38536385
+1980,Hydro Generation - TWh,1731.652451
+1980,Nuclear Generation - TWh,711.924223
+1980,Oil Consumption - TWh,35577.23346
+1980,Solar Generation - TWh,0
+1980,Wind Generation -TWh,0.0105
+1981,Coal Consumption - TWh,21149.68975
+1981,Gas Consumption - TWh,14395.12935
+1981,Geo Biomass Other - TWh,53.15454248
+1981,Hydro Generation - TWh,1768.903725
+1981,Nuclear Generation - TWh,840.7507617
+1981,Oil Consumption - TWh,34295.87466
+1981,Solar Generation - TWh,0
+1981,Wind Generation -TWh,0.0105
+1982,Coal Consumption - TWh,21384.43996
+1982,Gas Consumption - TWh,14468.77669
+1982,Geo Biomass Other - TWh,61.37055691
+1982,Hydro Generation - TWh,1800.908921
+1982,Nuclear Generation - TWh,912.1775425
+1982,Oil Consumption - TWh,33197.93445
+1982,Solar Generation - TWh,0
+1982,Wind Generation -TWh,0.0185
+1983,Coal Consumption - TWh,22045.0217
+1983,Gas Consumption - TWh,14702.80263
+1983,Geo Biomass Other - TWh,68.01793288
+1983,Hydro Generation - TWh,1877.769376
+1983,Nuclear Generation - TWh,1033.81271
+1983,Oil Consumption - TWh,32968.7374
+1983,Solar Generation - TWh,0.003
+1983,Wind Generation -TWh,0.032794949
+1984,Coal Consumption - TWh,22999.52711
+1984,Gas Consumption - TWh,15901.56072
+1984,Geo Biomass Other - TWh,76.0092183
+1984,Hydro Generation - TWh,1941.375556
+1984,Nuclear Generation - TWh,1254.568438
+1984,Oil Consumption - TWh,33738.7911
+1984,Solar Generation - TWh,0.006311111
+1984,Wind Generation -TWh,0.044755556
+1985,Coal Consumption - TWh,23986.18195
+1985,Gas Consumption - TWh,16260.90742
+1985,Geo Biomass Other - TWh,77.79223188
+1985,Hydro Generation - TWh,1979.774848
+1985,Nuclear Generation - TWh,1488.921637
+1985,Oil Consumption - TWh,33789.18353
+1985,Solar Generation - TWh,0.011747475
+1985,Wind Generation -TWh,0.064220202
+1986,Coal Consumption - TWh,24256.04966
+1986,Gas Consumption - TWh,16419.89209
+1986,Geo Biomass Other - TWh,85.57913315
+1986,Hydro Generation - TWh,2006.571648
+1986,Nuclear Generation - TWh,1594.735734
+1986,Oil Consumption - TWh,34802.7219
+1986,Solar Generation - TWh,0.015183838
+1986,Wind Generation -TWh,0.138831313
+1987,Coal Consumption - TWh,25210.2856
+1987,Gas Consumption - TWh,17280.6106
+1987,Geo Biomass Other - TWh,91.64285454
+1987,Hydro Generation - TWh,2033.706398
+1987,Nuclear Generation - TWh,1734.733117
+1987,Oil Consumption - TWh,35499.48354
+1987,Solar Generation - TWh,0.01060303
+1987,Wind Generation -TWh,0.195376768
+1988,Coal Consumption - TWh,25964.64729
+1988,Gas Consumption - TWh,18087.62053
+1988,Geo Biomass Other - TWh,94.28072763
+1988,Hydro Generation - TWh,2098.720984
+1988,Nuclear Generation - TWh,1891.249267
+1988,Oil Consumption - TWh,36703.07883
+1988,Solar Generation - TWh,0.01019596
+1988,Wind Generation -TWh,0.331579798
+1989,Coal Consumption - TWh,26213.47552
+1989,Gas Consumption - TWh,18870.55059
+1989,Geo Biomass Other - TWh,104.3482891
+1989,Hydro Generation - TWh,2087.570913
+1989,Nuclear Generation - TWh,1945.010586
+1989,Oil Consumption - TWh,37299.85028
+1989,Solar Generation - TWh,0.262223232
+1989,Wind Generation -TWh,2.649776768
+1990,Coal Consumption - TWh,25894.99669
+1990,Gas Consumption - TWh,19484.43609
+1990,Geo Biomass Other - TWh,116.9604047
+1990,Hydro Generation - TWh,2158.906256
+1990,Nuclear Generation - TWh,2000.462024
+1990,Oil Consumption - TWh,37690.88632
+1990,Solar Generation - TWh,0.388294949
+1990,Wind Generation -TWh,3.632470516
+1991,Coal Consumption - TWh,25642.77441
+1991,Gas Consumption - TWh,19976.06218
+1991,Geo Biomass Other - TWh,121.9829743
+1991,Hydro Generation - TWh,2209.410404
+1991,Nuclear Generation - TWh,2096.174705
+1991,Oil Consumption - TWh,37691.22715
+1991,Solar Generation - TWh,0.505202873
+1991,Wind Generation -TWh,4.086706675
+1992,Coal Consumption - TWh,25549.95936
+1992,Gas Consumption - TWh,20066.80933
+1992,Geo Biomass Other - TWh,130.9418438
+1992,Hydro Generation - TWh,2209.074255
+1992,Nuclear Generation - TWh,2112.089141
+1992,Oil Consumption - TWh,38344.36773
+1992,Solar Generation - TWh,0.468585109
+1992,Wind Generation -TWh,4.733212019
+1993,Coal Consumption - TWh,25675.12873
+1993,Gas Consumption - TWh,20269.10267
+1993,Geo Biomass Other - TWh,135.2817577
+1993,Hydro Generation - TWh,2341.244792
+1993,Nuclear Generation - TWh,2184.826061
+1993,Oil Consumption - TWh,38099.26792
+1993,Solar Generation - TWh,0.556697524
+1993,Wind Generation -TWh,5.697568819
+1994,Coal Consumption - TWh,25773.56225
+1994,Gas Consumption - TWh,20393.34136
+1994,Geo Biomass Other - TWh,140.4096751
+1994,Hydro Generation - TWh,2356.881825
+1994,Nuclear Generation - TWh,2225.844324
+1994,Oil Consumption - TWh,38934.96518
+1994,Solar Generation - TWh,0.600013925
+1994,Wind Generation -TWh,7.122929844
+1995,Coal Consumption - TWh,25954.36277
+1995,Gas Consumption - TWh,21108.56556
+1995,Geo Biomass Other - TWh,146.3616624
+1995,Hydro Generation - TWh,2485.633411
+1995,Nuclear Generation - TWh,2322.395978
+1995,Oil Consumption - TWh,39444.69344
+1995,Solar Generation - TWh,0.640813779
+1995,Wind Generation -TWh,8.261923444
+1996,Coal Consumption - TWh,26572.14495
+1996,Gas Consumption - TWh,22163.45951
+1996,Geo Biomass Other - TWh,150.5656293
+1996,Hydro Generation - TWh,2520.498994
+1996,Nuclear Generation - TWh,2406.801052
+1996,Oil Consumption - TWh,40380.49722
+1996,Solar Generation - TWh,0.705207972
+1996,Wind Generation -TWh,9.204600661
+1997,Coal Consumption - TWh,26526.83373
+1997,Gas Consumption - TWh,22034.35536
+1997,Geo Biomass Other - TWh,161.2867418
+1997,Hydro Generation - TWh,2566.13537
+1997,Nuclear Generation - TWh,2390.276558
+1997,Oil Consumption - TWh,41413.25827
+1997,Solar Generation - TWh,0.756584792
+1997,Wind Generation -TWh,12.01781647
+1998,Coal Consumption - TWh,26359.57805
+1998,Gas Consumption - TWh,22437.92054
+1998,Geo Biomass Other - TWh,168.7621089
+1998,Hydro Generation - TWh,2586.942015
+1998,Nuclear Generation - TWh,2431.38043
+1998,Oil Consumption - TWh,41624.43191
+1998,Solar Generation - TWh,0.831788965
+1998,Wind Generation -TWh,15.92126027
+1999,Coal Consumption - TWh,26521.91421
+1999,Gas Consumption - TWh,23075.97979
+1999,Geo Biomass Other - TWh,177.3933583
+1999,Hydro Generation - TWh,2605.676465
+1999,Nuclear Generation - TWh,2524.361484
+1999,Oil Consumption - TWh,42371.38362
+1999,Solar Generation - TWh,0.916196899
+1999,Wind Generation -TWh,21.21617401
+2000,Coal Consumption - TWh,27417.31293
+2000,Gas Consumption - TWh,23999.88706
+2000,Geo Biomass Other - TWh,186.0551694
+2000,Hydro Generation - TWh,2651.961722
+2000,Nuclear Generation - TWh,2580.899081
+2000,Oil Consumption - TWh,42897.19087
+2000,Solar Generation - TWh,1.120230397
+2000,Wind Generation -TWh,31.42090656
+2001,Coal Consumption - TWh,27852.50373
+2001,Gas Consumption - TWh,24330.94665
+2001,Geo Biomass Other - TWh,191.8840767
+2001,Hydro Generation - TWh,2583.887448
+2001,Nuclear Generation - TWh,2653.767774
+2001,Oil Consumption - TWh,43278.15657
+2001,Solar Generation - TWh,1.400820679
+2001,Wind Generation -TWh,38.39092395
+2002,Coal Consumption - TWh,28944.64346
+2002,Gas Consumption - TWh,25052.89903
+2002,Geo Biomass Other - TWh,206.3611148
+2002,Hydro Generation - TWh,2631.846503
+2002,Nuclear Generation - TWh,2696.170555
+2002,Oil Consumption - TWh,43639.20697
+2002,Solar Generation - TWh,1.763901131
+2002,Wind Generation -TWh,52.33175399
+2003,Coal Consumption - TWh,31496.50881
+2003,Gas Consumption - TWh,25752.01131
+2003,Geo Biomass Other - TWh,217.925451
+2003,Hydro Generation - TWh,2627.603541
+2003,Nuclear Generation - TWh,2641.568435
+2003,Oil Consumption - TWh,44609.51649
+2003,Solar Generation - TWh,2.258381155
+2003,Wind Generation -TWh,62.9169673
+2004,Coal Consumption - TWh,33664.34113
+2004,Gas Consumption - TWh,26735.57302
+2004,Geo Biomass Other - TWh,235.2839187
+2004,Hydro Generation - TWh,2820.744259
+2004,Nuclear Generation - TWh,2761.605227
+2004,Oil Consumption - TWh,46255.70684
+2004,Solar Generation - TWh,2.974844218
+2004,Wind Generation -TWh,85.11716443
+2005,Coal Consumption - TWh,36170.7856
+2005,Gas Consumption - TWh,27463.91843
+2005,Geo Biomass Other - TWh,254.58886
+2005,Hydro Generation - TWh,2916.350043
+2005,Nuclear Generation - TWh,2768.867851
+2005,Oil Consumption - TWh,46824.24996
+2005,Solar Generation - TWh,4.165617658
+2005,Wind Generation -TWh,104.0858518
+2006,Coal Consumption - TWh,38070.67412
+2006,Gas Consumption - TWh,28175.65204
+2006,Geo Biomass Other - TWh,271.6939603
+2006,Hydro Generation - TWh,3027.6737
+2006,Nuclear Generation - TWh,2803.366447
+2006,Oil Consumption - TWh,47366.83145
+2006,Solar Generation - TWh,5.721248865
+2006,Wind Generation -TWh,132.859188
+2007,Coal Consumption - TWh,40223.62426
+2007,Gas Consumption - TWh,29323.69724
+2007,Geo Biomass Other - TWh,294.7842971
+2007,Hydro Generation - TWh,3079.335005
+2007,Nuclear Generation - TWh,2746.239981
+2007,Oil Consumption - TWh,47957.51642
+2007,Solar Generation - TWh,7.770396103
+2007,Wind Generation -TWh,170.7303482
+2008,Coal Consumption - TWh,40770.48034
+2008,Gas Consumption - TWh,30024.33013
+2008,Geo Biomass Other - TWh,315.5032205
+2008,Hydro Generation - TWh,3257.388377
+2008,Nuclear Generation - TWh,2737.70771
+2008,Oil Consumption - TWh,47565.64964
+2008,Solar Generation - TWh,12.6436793
+2008,Wind Generation -TWh,220.6497405
+2009,Coal Consumption - TWh,40148.63267
+2009,Gas Consumption - TWh,29411.02867
+2009,Geo Biomass Other - TWh,339.6485263
+2009,Hydro Generation - TWh,3252.497433
+2009,Nuclear Generation - TWh,2698.983475
+2009,Oil Consumption - TWh,46653.50493
+2009,Solar Generation - TWh,20.97090868
+2009,Wind Generation -TWh,276.0524678
+2010,Coal Consumption - TWh,41997.23385
+2010,Gas Consumption - TWh,31606.76609
+2010,Geo Biomass Other - TWh,379.8760851
+2010,Hydro Generation - TWh,3435.834609
+2010,Nuclear Generation - TWh,2768.505889
+2010,Oil Consumption - TWh,48087.13619
+2010,Solar Generation - TWh,33.71477963
+2010,Wind Generation -TWh,346.505761
+2011,Coal Consumption - TWh,44018.0776
+2011,Gas Consumption - TWh,32370.9944
+2011,Geo Biomass Other - TWh,398.7356106
+2011,Hydro Generation - TWh,3501.067816
+2011,Nuclear Generation - TWh,2652.680581
+2011,Oil Consumption - TWh,48549.97548
+2011,Solar Generation - TWh,65.12359596
+2011,Wind Generation -TWh,440.6170193
+2012,Coal Consumption - TWh,44185.34465
+2012,Gas Consumption - TWh,33220.03194
+2012,Geo Biomass Other - TWh,430.7604911
+2012,Hydro Generation - TWh,3649.72369
+2012,Nuclear Generation - TWh,2470.805623
+2012,Oil Consumption - TWh,49156.71994
+2012,Solar Generation - TWh,100.8084042
+2012,Wind Generation -TWh,530.8525503
+2013,Coal Consumption - TWh,44993.46711
+2013,Gas Consumption - TWh,33766.13901
+2013,Geo Biomass Other - TWh,463.9883481
+2013,Hydro Generation - TWh,3814.040241
+2013,Nuclear Generation - TWh,2493.401425
+2013,Oil Consumption - TWh,49688.51064
+2013,Solar Generation - TWh,139.1152418
+2013,Wind Generation -TWh,635.7742232
+2014,Coal Consumption - TWh,44954.4351
+2014,Gas Consumption - TWh,33994.27883
+2014,Geo Biomass Other - TWh,500.9117139
+2014,Hydro Generation - TWh,3894.178016
+2014,Nuclear Generation - TWh,2541.138218
+2014,Oil Consumption - TWh,50013.65412
+2014,Solar Generation - TWh,197.8584283
+2014,Wind Generation -TWh,706.4692489
+2015,Coal Consumption - TWh,43844.17274
+2015,Gas Consumption - TWh,34780.12074
+2015,Geo Biomass Other - TWh,538.2774771
+2015,Hydro Generation - TWh,3884.619692
+2015,Nuclear Generation - TWh,2575.763561
+2015,Oil Consumption - TWh,50891.9763
+2015,Solar Generation - TWh,256.838045
+2015,Wind Generation -TWh,831.5674395
+2016,Coal Consumption - TWh,43195.63931
+2016,Gas Consumption - TWh,35590.03583
+2016,Geo Biomass Other - TWh,547.8659077
+2016,Hydro Generation - TWh,4012.947981
+2016,Nuclear Generation - TWh,2614.905286
+2016,Oil Consumption - TWh,51920.15617
+2016,Solar Generation - TWh,328.2374283
+2016,Wind Generation -TWh,963.7740364
+2017,Coal Consumption - TWh,43359.50847
+2017,Gas Consumption - TWh,36585.64207
+2017,Geo Biomass Other - TWh,582.8931323
+2017,Hydro Generation - TWh,4065.869592
+2017,Nuclear Generation - TWh,2638.554157
+2017,Oil Consumption - TWh,52567.51992
+2017,Solar Generation - TWh,446.9467639
+2017,Wind Generation -TWh,1140.971268
+2018,Coal Consumption - TWh,44109.46173
+2018,Gas Consumption - TWh,38516.6509
+2018,Geo Biomass Other - TWh,615.0382371
+2018,Hydro Generation - TWh,4171.404951
+2018,Nuclear Generation - TWh,2700.373917
+2018,Oil Consumption - TWh,53181.12474
+2018,Solar Generation - TWh,582.7543448
+2018,Wind Generation -TWh,1270.16488
+2019,Coal Consumption - TWh,43849.21477
+2019,Gas Consumption - TWh,39292.46757
+2019,Geo Biomass Other - TWh,651.8112107
+2019,Hydro Generation - TWh,4222.214992
+2019,Nuclear Generation - TWh,2795.961529
+2019,Oil Consumption - TWh,53619.92467
+2019,Solar Generation - TWh,724.0865061
+2019,Wind Generation -TWh,1429.619982

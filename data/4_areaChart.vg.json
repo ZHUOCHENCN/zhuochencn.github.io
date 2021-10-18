@@ -1,0 +1,148 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 620,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/ZHUOCHENCN/Project-2/main/data/4_renewable_energy_investment.csv"
+    },
+  
+   "transform": [
+      {"filter": "datum.Entity != 'wIndia'"}
+    ], 
+  
+  
+    "layer":[ 
+      {"mark": {"type": "area"},
+  
+      "encoding": {
+        "color": {
+        "field": "Entity",
+        "scale": {"scheme": "redgrey"},
+        "sort": "-color",
+        "legend":false}
+        ,
+        "y": {
+          "field": "Investment",
+          "type": "quantitative",
+          "title": "Investment ($ Billion)",
+          "aggregate": "sum",
+          "axis": {"tickCount":5, "domainColor":""}
+          },
+        "x": {
+          "field": "Year", 
+          "type": "temporal",
+          "axis": {"grid": false, "domainColor":"", "ticks": false}
+          },
+        
+        "tooltip": [
+        {"field": "Entity2", "type": "nominal", "title": "Entity"},
+        {
+          "field": "Investment",
+          "type": "quantitative",
+          "format": ".2f",
+          "title": "Investment (Billion USD) "
+        },
+        {"field": "Year", "type": "temporal", "timeUnit": "year", "title": "Year"}
+      ]
+    }},
+  
+    {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dy":-170,
+          "dx":355
+        },
+        "encoding": {
+          "text": {"value": "Others", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity":{
+            "condition": {"test": "year(datum['Year']) == 2015 && datum.Entity=='tBrazil'", "value": 1},
+            "value": 0
+          }
+        }
+  
+      },
+  
+    {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dy":-50,
+          "dx":355
+        },
+        "encoding": {
+          "text": {"value": "Asia & Oceania (excl. China)", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity":{
+            "condition": {"test": "year(datum['Year']) == 2015 && datum.Entity=='zEurope'", "value": 1},
+            "value": 0
+          }
+        }
+  
+      },
+  
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dy":-110,
+          "dx":355
+        },
+        "encoding": {
+          "text": {"field": "Entity2", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity":{
+            "condition": {"test": "year(datum['Year']) == 2015 && datum.Entity=='vUnited States of America'", "value": 1},
+            "value": 0
+          }
+        }
+  
+      },
+  
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dy":50,
+          "dx":355
+        },
+        "encoding": {
+          "text": {"field": "Entity2", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity":{
+            "condition": {"test": "year(datum['Year']) == 2015 && datum.Entity=='yChina'", "value": 1},
+            "value": 0
+          }
+        }
+  
+      },
+  
+      {
+        "mark": {
+          "type": "text",
+          "align": "left",
+          "dy":160,
+          "dx":355
+        },
+        "encoding": {
+          "text": {"field": "Entity2", "type": "nominal"},
+          "color": {"value": "black"},
+          "opacity":{
+            "condition": {"test": "year(datum['Year']) == 2015 && datum.Entity=='zEurope'", "value": 1},
+            "value": 0
+          }
+        }
+  
+      }
+  
+  
+    
+    ],
+     "config": {
+        "background":"",
+    "view": {
+       "stroke": "transparent"
+    }
+  }
+  }

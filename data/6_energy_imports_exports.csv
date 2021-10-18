@@ -1,0 +1,254 @@
+Entity,Year,Energy imports
+High income,1960,16.74183022
+High income,1961,17.66510538
+High income,1962,19.02912863
+High income,1963,21.15892715
+High income,1964,21.97776469
+High income,1965,23.72046796
+High income,1966,24.5521892
+High income,1967,24.73742788
+High income,1968,26.72356972
+High income,1969,29.38658233
+High income,1970,29.53654849
+High income,1971,15.83138652
+High income,1972,15.55746216
+High income,1973,16.49046336
+High income,1974,15.24449334
+High income,1975,15.32883008
+High income,1976,16.99922011
+High income,1977,16.13368531
+High income,1978,18.09154186
+High income,1979,14.68298256
+High income,1980,12.02702068
+High income,1981,10.58072442
+High income,1982,13.08905026
+High income,1983,15.31650167
+High income,1984,14.30040109
+High income,1985,15.78592967
+High income,1986,13.7511068
+High income,1987,15.35113827
+High income,1988,15.79346559
+High income,1989,16.38653079
+High income,1990,14.94275152
+High income,1991,13.93292668
+High income,1992,12.88171508
+High income,1993,13.58968529
+High income,1994,12.9327429
+High income,1995,13.12841008
+High income,1996,13.80550858
+High income,1997,13.89014073
+High income,1998,13.79223208
+High income,1999,16.44618642
+High income,2000,16.28915593
+High income,2001,15.7579392
+High income,2002,17.62722427
+High income,2003,17.33183102
+High income,2004,17.45176658
+High income,2005,17.13328253
+High income,2006,16.78858511
+High income,2007,17.62627145
+High income,2008,15.45377275
+High income,2009,14.47173969
+High income,2010,15.02045805
+High income,2011,11.69978733
+High income,2012,9.66808639
+High income,2013,8.022726203
+High income,2014,4.969539225
+Low income,1971,7.42655769
+Low income,1972,7.897505446
+Low income,1973,8.131360255
+Low income,1974,8.070405129
+Low income,1975,7.642568012
+Low income,1976,5.817451347
+Low income,1977,6.114971097
+Low income,1978,7.136495186
+Low income,1979,7.500858631
+Low income,1980,7.925218057
+Low income,1981,7.36446646
+Low income,1982,6.781674237
+Low income,1983,8.245709403
+Low income,1984,7.944804233
+Low income,1985,7.146196569
+Low income,1986,7.031514272
+Low income,1987,6.541605033
+Low income,1988,7.54702549
+Low income,1989,7.464875487
+Low income,1990,7.675089631
+Low income,1991,6.983282122
+Low income,1992,7.019017553
+Low income,1993,6.948001251
+Low income,1994,5.911631635
+Low income,1995,6.747555565
+Low income,1996,6.818168205
+Low income,1997,6.747972107
+Low income,1998,6.557448676
+Low income,1999,6.197033036
+Low income,2000,5.977612701
+Low income,2001,6.350121492
+Low income,2002,6.172218712
+Low income,2003,6.341238315
+Low income,2004,5.293515987
+Low income,2005,3.981861514
+Low income,2006,3.783223787
+Low income,2007,3.632577756
+Low income,2008,4.136569498
+Low income,2009,4.248639678
+Low income,2010,3.949523472
+Low income,2011,1.984092716
+Low income,2012,0.02235462
+Low income,2013,-3.72833698
+Low income,2014,-5.693109405
+Lower middle income,1971,-26.24193101
+Lower middle income,1972,-31.40162629
+Lower middle income,1973,-35.6591486
+Lower middle income,1974,-37.50697026
+Lower middle income,1975,-30.53166865
+Lower middle income,1976,-35.26285364
+Lower middle income,1977,-35.60075349
+Lower middle income,1978,-33.21657318
+Lower middle income,1979,-34.66895443
+Lower middle income,1980,-32.39633807
+Lower middle income,1981,-25.21368776
+Lower middle income,1982,-19.82353272
+Lower middle income,1983,-19.87364523
+Lower middle income,1984,-25.27612329
+Lower middle income,1985,-22.54223648
+Lower middle income,1986,-21.3040878
+Lower middle income,1987,-19.12449507
+Lower middle income,1988,-19.97747958
+Lower middle income,1989,-21.64179491
+Lower middle income,1990,0.567555761
+Lower middle income,1991,0.495112275
+Lower middle income,1992,-2.258362186
+Lower middle income,1993,-3.729736778
+Lower middle income,1994,-7.550527535
+Lower middle income,1995,-6.07493917
+Lower middle income,1996,-6.585930053
+Lower middle income,1997,-7.267125216
+Lower middle income,1998,-6.527094416
+Lower middle income,1999,-5.257833153
+Lower middle income,2000,-5.323410606
+Lower middle income,2001,-5.848570222
+Lower middle income,2002,-4.151710381
+Lower middle income,2003,-5.821079096
+Lower middle income,2004,-5.328008893
+Lower middle income,2005,-6.204450548
+Lower middle income,2006,-7.326182152
+Lower middle income,2007,-6.082680606
+Lower middle income,2008,-4.544428955
+Lower middle income,2009,-4.440091775
+Lower middle income,2010,-4.669556851
+Lower middle income,2011,-6.956578588
+Lower middle income,2012,-3.823617338
+Lower middle income,2013,-3.704474927
+Lower middle income,2014,0.475962914
+Middle income,1960,12.33565394
+Middle income,1961,12.58670077
+Middle income,1962,17.94188054
+Middle income,1963,18.02619835
+Middle income,1964,19.24357063
+Middle income,1965,18.82009052
+Middle income,1966,19.35059576
+Middle income,1967,16.25670021
+Middle income,1968,18.08827421
+Middle income,1969,19.43591473
+Middle income,1970,23.18499157
+Middle income,1971,-63.23251692
+Middle income,1972,-60.9393589
+Middle income,1973,-64.54452988
+Middle income,1974,-58.43562459
+Middle income,1975,-48.83396666
+Middle income,1976,-51.82544044
+Middle income,1977,-48.15369988
+Middle income,1978,-44.28499167
+Middle income,1979,-42.14197582
+Middle income,1980,-31.87839214
+Middle income,1981,-23.62371322
+Middle income,1982,-24.94344139
+Middle income,1983,-26.15173057
+Middle income,1984,-27.94335796
+Middle income,1985,-27.53170394
+Middle income,1986,-25.74346853
+Middle income,1987,-25.5777504
+Middle income,1988,-27.26378921
+Middle income,1989,-29.2951966
+Middle income,1990,-24.37147997
+Middle income,1991,-22.34530883
+Middle income,1992,-23.09341529
+Middle income,1993,-22.60260538
+Middle income,1994,-24.16931243
+Middle income,1995,-24.03511675
+Middle income,1996,-24.94640732
+Middle income,1997,-25.92086797
+Middle income,1998,-27.55432138
+Middle income,1999,-26.36411175
+Middle income,2000,-27.71830125
+Middle income,2001,-27.56978347
+Middle income,2002,-26.28014994
+Middle income,2003,-25.83411222
+Middle income,2004,-25.49471907
+Middle income,2005,-25.02141032
+Middle income,2006,-23.54418292
+Middle income,2007,-21.64877575
+Middle income,2008,-20.37060203
+Middle income,2009,-18.30127098
+Middle income,2010,-16.80319307
+Middle income,2011,-15.08366392
+Middle income,2012,-12.34382004
+Middle income,2013,-11.45238361
+Middle income,2014,-8.051411251
+Upper middle income,1960,12.33565394
+Upper middle income,1961,12.58670077
+Upper middle income,1962,17.94188054
+Upper middle income,1963,18.02619835
+Upper middle income,1964,19.24357063
+Upper middle income,1965,18.82009052
+Upper middle income,1966,19.35059576
+Upper middle income,1967,16.25670021
+Upper middle income,1968,18.08827421
+Upper middle income,1969,19.43591473
+Upper middle income,1970,23.18499157
+Upper middle income,1971,-78.94005085
+Upper middle income,1972,-73.22417792
+Upper middle income,1973,-76.28977829
+Upper middle income,1974,-66.888834
+Upper middle income,1975,-55.97420419
+Upper middle income,1976,-58.24944444
+Upper middle income,1977,-52.90227853
+Upper middle income,1978,-48.30694453
+Upper middle income,1979,-44.89174052
+Upper middle income,1980,-31.68591973
+Upper middle income,1981,-23.01130871
+Upper middle income,1982,-26.92162657
+Upper middle income,1983,-28.61250205
+Upper middle income,1984,-28.96707797
+Upper middle income,1985,-29.48968381
+Upper middle income,1986,-27.49124108
+Upper middle income,1987,-28.1063215
+Upper middle income,1988,-30.12775797
+Upper middle income,1989,-32.35929036
+Upper middle income,1990,-33.56480132
+Upper middle income,1991,-31.06049386
+Upper middle income,1992,-31.05538034
+Upper middle income,1993,-29.76404412
+Upper middle income,1994,-30.45029073
+Upper middle income,1995,-30.91538893
+Upper middle income,1996,-31.9671107
+Upper middle income,1997,-33.21023755
+Upper middle income,1998,-35.92523938
+Upper middle income,1999,-34.94825375
+Upper middle income,2000,-36.83843253
+Upper middle income,2001,-36.36713709
+Upper middle income,2002,-35.19101068
+Upper middle income,2003,-33.50753902
+Upper middle income,2004,-32.9651543
+Upper middle income,2005,-31.79822998
+Upper middle income,2006,-29.20139009
+Upper middle income,2007,-26.99306063
+Upper middle income,2008,-25.77507898
+Upper middle income,2009,-23.11683624
+Upper middle income,2010,-20.91707946
+Upper middle income,2011,-17.7597317
+Upper middle income,2012,-15.14207552
+Upper middle income,2013,-13.96193046
+Upper middle income,2014,-10.72008983

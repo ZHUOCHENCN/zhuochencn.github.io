@@ -1,0 +1,194 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {
+    "url": "https://raw.githubusercontent.com/ZHUOCHENCN/FIT3179_A2/main/data/2_world_oil_energy.csv"
+  },
+  "width": 600,
+  "height": 400,
+  "encoding": {
+    "x": {"field": "Year", 
+    "type": "temporal", "axis":  {"grid": false, "ticks": false}}
+    
+    
+    },
+
+  "layer": [
+    {
+      "encoding": {
+        "color": {"field": "Energy Type", "type": "nominal", "legend": null, 
+        "scale": {"range": ["#4c331a", "#4c331a", "#4c331a", "#dfbf9f", "#dfbf9f", "#4c331a","#dfbf9f", "#dfbf9f" ]}},
+        "y": {"field": "Value", "type": "quantitative", "axis": {"domainColor":""}, "title": "Energy (TWh)"}
+      },
+      "layer": [
+        {"mark": "line"},
+        {"transform": [{"filter": {"selection": "hover"}}], "mark": "point"},
+        {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx":40,
+        "dy":-10
+      },
+      "encoding": {
+        "text": {"field": "Energy Type", "type": "nominal"},
+        "color": {"value": "black"},
+        "opacity":{
+          "condition": {"test": "year(datum.Year) == 2016 && (datum['Energy Type']=='Oil Consumption - TWh' || datum['Energy Type']=='Coal Consumption - TWh' || datum['Energy Type']=='Gas Consumption - TWh')" , "value": 1},
+          "value": 0
+        }
+      }
+
+    }
+      ]
+    },
+    {
+      "transform": [
+        {"pivot": "Energy Type", "value": "Value", "groupby": ["Year"]}
+      ],
+      "mark": "rule",
+      "encoding": {
+        "opacity": {
+          "condition": {"value": 0.3, "selection": "hover"},
+          "value": 0
+        },
+        "tooltip": [
+          {
+            "field": "Year",
+            "type": "temporal",
+            "timeUnit": "year",
+            "title": "Year"
+          },
+          {
+            "field": "Oil Consumption - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Coal Consumption - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Gas Consumption - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Hydro Generation - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Nuclear Generation - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Geo Biomass Other - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Wind Generation -TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+          {
+            "field": "Solar Generation - TWh",
+            "type": "quantitative",
+            "format": ".0f"
+          }
+        ]
+      },
+      "selection": {
+        "hover": {
+          "type": "single",
+          "fields": ["Year"],
+          "nearest": true,
+          "on": "mouseover",
+          "empty": "none",
+          "clear": "mouseout"
+        }
+      }
+    },
+    {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx":100,
+          "dy": 180,
+          "text": "Others - TWh"
+        },
+        "encoding": {
+
+          "opacity":{
+          "condition":
+          {"test": " year(datum.Year)== 2017 && datum['Energy Type'] ==['Oil Consumption - TWh']", "value": 1},
+          "value": 0
+
+        }
+        }
+  },
+  {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx":25,
+          "dy": 20,
+          "text": "Then consumption of Oil, Coal"
+        },
+        "encoding": {
+
+          "opacity":{
+          "condition":
+          {"test": " year(datum.Year)== 2017 && datum['Energy Type'] ==['Oil Consumption - TWh']", "value": 1},
+          "value": 0
+
+        }
+        }
+  },
+  {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx":25,
+          "dy": 40,
+          "text": "and Gas exceeds that of ohter"
+        },
+        "encoding": {
+
+          "opacity":{
+          "condition":
+          {"test": " year(datum.Year)== 2017 && datum['Energy Type'] ==['Oil Consumption - TWh']", "value": 1},
+          "value": 0
+
+        }
+        }
+  },
+  {
+        "mark": {
+          "type": "text",
+          "align": "right",
+          "dx":1,
+          "dy":60,
+          "text": "energy sources."
+        },
+        "encoding": {
+
+          "opacity":{
+          "condition":
+          {"test": " year(datum.Year)== 2017 && datum['Energy Type'] ==['Oil Consumption - TWh']", "value": 1},
+          "value": 0
+
+        }
+        }
+  }
+
+  ],
+  "config": {
+      "background":"",
+  "view": {
+     "stroke": "transparent"
+  }
+}
+}

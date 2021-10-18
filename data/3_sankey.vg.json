@@ -1,0 +1,423 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v3.0.json",
+    "width": 700,
+    "height": 500,
+    "data": [
+      {
+        "name": "rawData",
+        "values": [
+          {
+            "continent": "United States",
+            "status": "Renewable",
+            "number": 12.95,
+            "stk1": "United",
+            "stk2": "Renewable",
+            "size": 12.95
+          },
+          {
+            "continent": "United States",
+            "status": "Nuclear",
+            "number": 19.23,
+            "stk1": "United States",
+            "stk2": "Nuclear",
+            "size": 19.23
+          },
+          {
+            "continent": "United States",
+            "status": "Fossil Fuel",
+            "number": 67.82,
+            "stk1": "United States",
+            "stk2": "Fossil Fuel",
+            "size": 67.82
+          },
+  
+  
+  
+  
+  
+          {
+            "continent": "Australia",
+            "status": "Renewable",
+            "number": 12.95,
+            "stk1": "Australia",
+            "stk2": "Renewable",
+            "size": 12.95
+          },
+          {
+            "continent": "Australia",
+            "status": "Nuclear",
+            "number": 0,
+            "stk1": "Australia",
+            "stk2": "Nuclear",
+            "size": 0
+          },
+          {
+            "continent": "Australia",
+            "status": "Fossil Fuel",
+            "number": 87.05,
+            "stk1": "Australia",
+            "stk2": "Fossil Fuel",
+            "size": 87.05
+          },
+  
+          
+  
+  
+  
+  
+          {
+            "continent": "Japan",
+            "status": "Renewable",
+            "number": 14.03,
+            "stk1": "Japan",
+            "stk2": "Renewable",
+            "size": 14.03
+          },
+          {
+            "continent": "Japan",
+            "status": "Nuclear",
+            "number": 25.30,
+            "stk1": "Nuclear",
+            "stk2": "Renewable",
+            "size": 25.30
+          },
+          {
+            "continent": "Japan",
+            "status": "Fossil Fuel",
+            "number": 60.67,
+            "stk1": "Japan",
+            "stk2": "Fossil Fuel",
+            "size": 60.67
+          },
+  
+  
+  
+  
+  
+  
+  
+          {
+            "continent": "India",
+            "status": "Renewable",
+            "number": 15.41,
+            "stk1": "India",
+            "stk2": "Renewable",
+            "size": 15.41
+          },
+          {
+            "continent": "India",
+            "status": "Nuclear",
+            "number": 2.8,
+            "stk1": "India",
+            "stk2": "Nuclear",
+            "size": 2.8
+          },
+          {
+            "continent": "India",
+            "status": "Fossil Fuel",
+            "number": 81.79,
+            "stk1": "India",
+            "stk2": "Fossil Fuel",
+            "size": 81.79
+          },
+  
+  
+  
+  
+  
+  
+  
+          {
+            "continent": "China",
+            "status": "Renewable",
+            "number": 22.61,
+            "stk1": "China",
+            "stk2": "Renewable",
+            "size": 22.61
+          },
+          {
+            "continent": "China",
+            "status": "Nuclear",
+            "number": 2.05,
+            "stk1": "China",
+            "stk2": "Nuclear",
+            "size": 2.05
+          },
+          {
+            "continent": "China",
+            "status": "Fossil Fuel",
+            "number": 75.34,
+            "stk1": "China",
+            "stk2": "Fossil Fuel",
+            "size": 75.34
+          }
+        ],
+        "transform": [
+          {"type": "formula", "expr": "datum['continent']", "as": "stk1"},
+          {"type": "formula", "expr": "datum.status", "as": "stk2"},
+          {"type": "formula", "expr": "datum.number", "as": "size"}
+        ]
+      },
+      {
+        "name": "nodes",
+        "source": "rawData",
+        "transform": [
+          {"type": "formula", "expr": "datum.stk1+datum.stk2", "as": "key"},
+          {"type": "fold", "fields": ["stk1", "stk2"], "as": ["stack", "grpId"]},
+          {
+            "type": "formula",
+            "expr": "datum.stack == 'stk1' ? datum.stk1+' '+datum.stk2 : datum.stk2+' '+datum.stk1",
+            "as": "sortField"
+          },
+          {
+            "type": "stack",
+            "groupby": ["stack"],
+            "sort": {"field": "sortField", "order": "descending"},
+            "field": "size"
+          },
+          {"type": "formula", "expr": "(datum.y0+datum.y1)/2", "as": "yc"}
+        ]
+      },
+      {
+        "name": "groups",
+        "source": "nodes",
+        "transform": [
+          {
+            "type": "aggregate",
+            "groupby": ["stack", "grpId"],
+            "fields": ["size"],
+            "ops": ["sum"],
+            "as": ["total"]
+          },
+          {
+            "type": "stack",
+            "groupby": ["stack"],
+            "sort": {"field": "grpId", "order": "descending"},
+            "field": "total"
+          },
+          {"type": "formula", "expr": "scale('y', datum.y0)", "as": "scaledY0"},
+          {"type": "formula", "expr": "scale('y', datum.y1)", "as": "scaledY1"},
+          {
+            "type": "formula",
+            "expr": "datum.stack == 'stk1'",
+            "as": "rightLabel"
+          },
+          {
+            "type": "formula",
+            "expr": "datum.total/domain('y')[1]",
+            "as": "percentage"
+          }
+        ]
+      },
+      {
+        "name": "destinationNodes",
+        "source": "nodes",
+        "transform": [{"type": "filter", "expr": "datum.stack == 'stk2'"}]
+      },
+      {
+        "name": "edges",
+        "source": "nodes",
+        "transform": [
+          {"type": "filter", "expr": "datum.stack == 'stk1'"},
+          {
+            "type": "lookup",
+            "from": "destinationNodes",
+            "key": "key",
+            "fields": ["key"],
+            "as": ["target"]
+          },
+          {
+            "type": "linkpath",
+            "orient": "horizontal",
+            "shape": "diagonal",
+            "sourceY": {"expr": "scale('y', datum.yc)"},
+            "sourceX": {"expr": "scale('x', 'stk1') + bandwidth('x')"},
+            "targetY": {"expr": "scale('y', datum.target.yc)"},
+            "targetX": {"expr": "scale('x', 'stk2')"}
+          },
+          {
+            "type": "formula",
+            "expr": "range('y')[0]-scale('y', datum.size)",
+            "as": "strokeWidth"
+          },
+          {
+            "type": "formula",
+            "expr": "datum.size/domain('y')[1]",
+            "as": "percentage"
+          }
+        ]
+      }
+    ],
+    "scales": [
+      {
+        "name": "x",
+        "type": "band",
+        "range": "width",
+        "domain": ["stk1", "stk2"],
+        "paddingOuter": 0.0,
+        "paddingInner": 0.95
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "range": "height",
+        "domain": {"data": "nodes", "field": "y1"}
+      },
+      {
+        "name": "stackNames",
+        "type": "ordinal",
+        "range": ["Continent", "Source"],
+        "domain": ["stk1", "stk2"]
+      },
+      {
+        "name": "color",
+        "type": "ordinal",
+        "domain": ["Renewable", "Nuclear", "Fossil Fuel"],
+        "range": ["#e3120b", "#efe8d1", "#660000"]
+      },
+      {
+        "name": "color_outcome",
+        "type": "ordinal",
+        "domain": ["Australia", "China", "India", "Japan", "United States"],
+        "range": ["#b3b3cc", "#7a1f1a", "#ed8b85", "#e6550d", "#c90c0c"]
+      }
+    ],
+    "axes": [
+      {
+        "orient": "bottom",
+        "scale": "x",
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 10,
+        "encode": {
+          "labels": {
+            "update": {
+              "text": {
+                "scale": "stackNames",
+                "field": "value",
+                "fontWeight": "bold",
+                "fontSize": 100
+                
+              }
+            }
+          }
+        }
+      },
+      {
+        "orient": "top",
+        "scale": "x",
+        "domain": false,
+        "ticks": false,
+        "labelPadding": 10,
+        "encode": {
+          "labels": {
+            "update": {
+              "text": {
+                "scale": "stackNames",
+                "field": "value",
+                "fontWeight": "light",
+                "fontSize": 10
+              }
+            }
+          }
+        }
+      },
+      {
+        "orient": "left",
+        "scale": "y",
+        "labels": false,
+        "domain": false,
+        "ticks": false
+      }
+    ],
+    "marks": [
+      {
+        "type": "rect",
+        "from": {"data": "nodes"},
+        "encode": {
+          "enter": {
+            "stroke": {"value": "#000"},
+            "fill": {"scale": "color_outcome", "field": "stk1"},
+            "fillOpacity": {"value": 0.7},
+            "strokeWidth": {"value": 1},
+            "width": {"scale": "x", "band": 1},
+            "x": {"scale": "x", "field": "stack"},
+            "y": {"field": "y0", "scale": "y"},
+            "y2": {"field": "y1", "scale": "y"}
+          }
+        }
+      },
+      {
+        "type": "rect",
+        "from": {"data": "destinationNodes"},
+        "encode": {
+          "enter": {
+            "stroke": {"value": "#000"},
+            "fill": {"scale": "color", "field": "stk2"},
+            "fillOpacity": {"value": 0.9},
+            "strokeWidth": {"value": 1},
+            "width": {"scale": "x", "band": 1},
+            "x": {"scale": "x", "field": "stack"},
+            "y": {"field": "y0", "scale": "y"},
+            "y2": {"field": "y1", "scale": "y"}
+          }
+        }
+      },
+      {
+        "type": "path",
+        "name": "edgeMark",
+        "from": {"data": "edges"},
+        "clip": true,
+        "encode": {
+          "update": {
+            "stroke": [{"scale": "color_outcome", "field": "stk1"}],
+            "strokeWidth": {"field": "strokeWidth"},
+            "path": {"field": "path"},
+            "strokeOpacity": {
+              "signal": " (groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 0.9 : 0.3"
+            },
+            "zindex": {
+              "signal": "(groupHover.stk1 == datum.stk1 || groupHover.stk2 == datum.stk2) ? 1 : 0"
+            },
+            "tooltip": {
+              "signal": "datum.stk1 + ' → ' + datum.stk2 + '    ' + format(datum.size, ',.0f') + '%'"
+            }
+          },
+          "hover": {"strokeOpacity": {"value": 1}}
+        }
+      },
+      {
+        "type": "text",
+        "from": {"data": "groups"},
+        "interactive": false,
+        "encode": {
+          "update": {
+            "x": {
+              "signal": "scale('x', datum.stack) + (datum.rightLabel ? bandwidth('x') + 8 : -8)"
+            },
+            "yc": {"signal": "(datum.scaledY0 + datum.scaledY1)/2"},
+            "align": {"signal": "datum.rightLabel ? 'left' : 'right'"},
+            "baseline": {"value": "middle"},
+            "fontWeight": {"value": "bold"},
+            "text": {
+              "signal": "abs(datum.scaledY0-datum.scaledY1) > 13 ? datum.grpId : ''"
+            }
+          }
+        }
+      }
+    ],
+    "signals": [
+      {
+        "name": "groupHover",
+        "value": {},
+        "on": [
+          {
+            "events": "@groupMark:mouseover",
+            "update": "{stk1:datum.stack=='stk1' && datum.grpId, stk2:datum.stack=='stk2' && datum.grpId}"
+          },
+          {"events": "mouseout", "update": "{}"}
+        ]
+      }
+    ],
+    "config": {}
+  }

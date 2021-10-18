@@ -1,0 +1,62 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "width": 600,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/ZHUOCHENCN/Project-2/main/data/6_energy_imports_exports.csv"
+    },
+    "params": [
+      {
+        "name": "Year_Above",
+        "value": 1980,
+        "bind": {
+          "input": "range",
+          "min": 1980,
+          "max": 2014,
+          "step": 1,
+          "name": "Minimum year"
+        }
+      }
+    ],
+    "mark": "bar",
+    "transform": [{"filter": "year(datum.Year) == Year_Above"}],
+    "encoding": {
+      "y": {
+        "field": "Entity",
+        "type": "nominal",
+        "axis": {
+          "domain": false,
+          "ticks": false,
+          "labelAngle": 0,
+          "labelPadding": 4,
+          "title": null
+        }
+      },
+      "x": {
+        "field": "Energy imports",
+        "type": "quantitative",
+        "axis": {
+          "gridColor": {
+            "condition": {"test": "datum.value === 0", "value": "black"},
+            "value": "#ddd"
+          },
+          "title": "Enery Imports/Exports (%)",
+          "grid": false},
+          "scale": {"domain": [-40,25]}
+      },
+      "color": {
+        "field": "Entity", 
+        "scale": {"range":["#8b0000", "#ffe6e6","#ffe6e6","#ffe6e6","#ffe6e6"]}, 
+        "legend":false},
+       "tooltip": [
+        {"field": "Energy imports", "aggregate": "sum", "format": ".2f", "type": "quantitative", "title": "Trade (%)"}, 
+        {"field": "Year", "type": "temporal", "title": "Year", "timeUnit":"year"}
+      ]
+    },
+     "config": {
+        "background":"",
+    "view": {
+       "stroke": "transparent"
+    }
+  }
+  }

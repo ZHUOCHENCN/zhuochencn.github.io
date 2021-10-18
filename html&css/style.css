@@ -1,0 +1,40 @@
+
+ body{
+   background-color:rgba(236, 236, 233, 0.199);
+ }
+ .page{
+   width: 1300px;    
+   background-color: rgba(219, 217, 210, 0.082);   
+   margin: auto;
+}
+.title{
+  background-color:rgba(219, 189, 134, 0.452);
+}
+
+h1{
+  text-align: center;
+  font-size: 60px;
+  color:  black;
+  font-weight: 1000;
+}
+ul{
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 100;
+  color: #737373;
+}
+.vis-container{
+  width: 100%;
+}
+
+.text{
+  padding-right: 20px;
+}
+
+.pure-a{
+    margin-bottom: 25px;
+    background-color: #f3c7743b;
+}
+.pure-g{
+  margin-bottom: 25px;
+}
