@@ -1,6 +1,5 @@
 # FIT3179-Visualization2
 
-<!DOCTYPE html>
 <html>
 <head>
   <title>Visualization-Project2</title>
